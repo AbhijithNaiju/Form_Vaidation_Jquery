@@ -8,21 +8,18 @@
 		<link rel="stylesheet" href="style/form.css">
 	</head>
 	<body class="d-flex">
-		<form>
+		<form id="myForm" >
 			<div>
 				<label>First Name</label>
-				<input type="text" id="first_name" placeholder=""  class="width_30">
-				<span id="first_name_error"></span>
+				<input type="text" name="firstName" placeholder="Name"  class="width_30">
 			</div>
 			<div>
 				<label>Email</label>
-				<input type="email" id="email" placeholder="" class="width_30">
-				<span id="email_error"></span>
+				<input type="email" name="emailAddress" placeholder="Email" class="width_30">
 			</div>
 			<div>
 				<label>Phone Number</label>
-				<input type="text" id="number" placeholder="" class="width_30">
-				<span id="number_error"></span>
+				<input type="text" name="phoneNumber" placeholder="Number" class="width_30">
 			</div>
 			<div>
 				<label>Gender</label>
@@ -32,39 +29,38 @@
 					<input type="radio" name="gender" value="F" id="female">
 					<label class="width_unset">Female</label>
 				</div>
-				<span id="gender_error"></span>
+				<label id="gender-error" class="error" for="gender"></label>
 			</div>
 			<div>
 				<label>Device</label>
 				<div class="d-flex">
-					<input type="checkbox" value="a" id="android">
+					<input type="checkbox" id="android" name="device">
 					<label class="width_unset me-4">Android</label>
-					<input type="checkbox" value="i" id="ios">
+					<input type="checkbox" id="ios" name="device">
 					<label class="width_unset">IOS</label>
-					<input type="checkbox" value="o" id="other_device">
+					<input type="checkbox" id="other_device" name="device">
 					<label class="width_unset">Other</label>
 				</div>
-				<span id="device_error"></span>
+				<label id="device-error" class="error" for="device"></label>
 			</div>
 			<div>
 				<label>DOB</label>
-				<input type="date" id="date" placeholder="" class="width_30">
-				<span id="date_error"></span>
+				<input type="date" name="dob" class="width_30">
 			</div>
 			<div>
 				<label>Password</label>
-				<input type="password" id="password" placeholder="" class="width_30">
-				<span id="password_error"></span>
+				<input type="password" name="myPassword" id="myPassword" class="width_30">
 			</div>
 			<small>*Password must be a combination of special charectors digits and lower case and uppercase letters</small>
 			<div>
 				<label>Confirm Password</label>
-				<input type="password" id="confirm_password" placeholder="" class="width_30">
-				<span id="confirm_password_error"></span>
+				<input type="password" id="confirmPassword" name="confirmPassword" class="width_30">
 			</div>
-			<button type="button" name="form_validate">SUBMIT</button>
+			<button type="submit" name="form_validate">SUBMIT</button>
 		</form>
+	
 	<script src="js/jquery-3.7.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	<script src="js/form_validation.js"></script>
 	</body>
 </html>
