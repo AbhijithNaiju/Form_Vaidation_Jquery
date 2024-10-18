@@ -1,0 +1,40 @@
+body
+{
+	height:100vh;
+}
+form
+{
+	border:2px solid #333;
+	margin:auto;
+	width:60%;
+	padding:10px;
+}
+form>div
+{
+	margin-top:10px;
+	display:flex;
+}	
+label
+{
+	width:20%;
+}
+input.width_30
+{
+	width:30%;	
+}
+form>div>div
+{
+	width:30%;
+}
+button
+{
+	width:100%;
+	background:#900C3F;
+	border:2px solid #fff;
+	color:#fff;
+	padding:10px 0;
+}
+span
+{
+	color:red;
+}
